@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root{
+    --dark:#0B0C10;
+    --darkColor: #1f2833;
+    --greyish: #1F2833;
+    --grey: #C5C6C7;
+    --greenish: #66FCF1;
+    --green: #45A29E;
+}
+
+/* General Properties */
+body{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar Properties */
+
+.navbar-container{
+    width: 100%;
+    position: fixed;
+    background-color: var(--dark);
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-list li{
+    list-style: none;
+    float: right;
+    margin: 25px 50px;
+    color: var(--darkColor);
+}
+
+.navbar-list a{
+    color: var(--greenish);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+
+#navbar .logo{
+    float:left;
+    margin: 20px 40px;
+    color: var(--greenish)
+}
+
+/* Welcome Section Properties */
+
+#welcome-container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--greyish);
+}
+#welcome-section{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    top: 35%;
+    color: var(--greenish);
+}
+
+#welcome-section h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.technology-container{
+    width: 80%;
+    margin: 30px auto;
+    font-size: 20px;
+}
+
+.navbar-list a{
+    padding: 27px 15px;
+    letter-spacing: 5px;
+}
+
+.technology-list li{
+    display: inline;
+    position: relative;
+    margin: 35px;
+}
+
+.technology-list li .fab{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-top: 18px;
+}
+
+.fa-js-square{
+    margin-left: 10px;
+}
+
+
+/* Project Container */
+
+#project-container{
+    background-color: #254e58;
+}
+
+.project-header{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    width: 70.7%;
+    margin: 0 auto;
+    border-bottom: 3px solid white;
+}
+
+img{
+    height: 350px;
+    width: 450px;
+    margin: 10px;
+    padding: 0;
+    box-shadow:  -6px -6px 29px 0px rgba(7,26,20,1);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin: 20px auto;  
+}
+
+.grid-container a{
+    text-decoration: none;
+}
+.grid-container p{
+    font-size: 26px;
+    color: white;
+    background-color: var(--darkColor);
+    width: 76.5%;
+    margin: 0 auto 10px auto;
+    position: relative;
+    top: -15px;
+    padding: 10px;
+}
+
+.mylink{
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: var(--darkColor);
+    display: inline-block;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+    left: 45%;
+    box-shadow:  -4px -2px 29px 0px rgba(7,26,20,1);
+}
+
+/* Contact Container */
+
+.contact-container{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--darkColor);
+}
+
+.contact-header{
+    color: var(--greenish);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.contact-div p{
+    color: var(--greenish);
+    padding: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo-div a{
+    display: inline-block;
+    padding: 40px;
+    text-decoration: none;
+    color: var(--greenish);
+    font-size: 26px;
+}
+
+.logo-div a i{
+    margin: 7px;
+}
+
+/* Footer Div Properties */
+
+#contact{
+    width: 100%;
+    background-color: var(--greyish);
+    padding: 40px;
+    border-top: 5px solid var(--greenish);
+}
+
+.foot{
+    font-size: 20px;
+    color: var(--greenish);
+    float: right;
+}
+
+/* Hovering Stuff */
+
+.project1:hover{
+    transform: scale(1.02, 1.02);
+}
+.project2:hover{
+    transform: scale(1.02, 1.02);
+}
+.project3:hover{
+    transform: scale(1.02, 1.02);
+}
+.project4:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.technology-list .fab:hover{
+    transform: translate(0, 25px);
+    transition: transform 0.4s ease-in;
+}
+
+.navbar-list a:hover{
+    background-color: var(--green);
+    color:white;
+}
+
+.mylink:hover{
+    transform: scale(1.04,1.04);
+    background-color: var(--green);
+}
+
+.logo-div a:hover{
+    transform: scale(1.5, 1.5);
+    transition: transform 0.3s ease-out;
+}
+
+/* Media Queries / Responsive Design */
+
+@media screen and (max-width: 750px){
+    #welcome-container{
+        float: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .technology-list{
+        float: none;
+        width: 100%;
+    }
+    .technology-list li{
+        max-width: 100%;
+        margin: 15px;
+    }
+
+    .navbar-list a{
+        margin: 15px;
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: normal;
+        position: relative;
+        top: 15px;
+    }
+
+    .navbar-container{
+        height: 10%;
+    }
+
+    .navbar-list li{
+        margin: 5px;
+    }
+
+    #navbar .logo{
+        position: relative;
+        top: 15px;
+        left: 15px;
+        margin: 0;
+    }
+}
